@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+out/
+.turbo/
+.env
+.env.*
+!.env.example
+.supabase/
