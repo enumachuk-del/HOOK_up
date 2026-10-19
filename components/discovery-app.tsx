@@ -71,8 +71,8 @@ export function DiscoveryApp({
   return (
     <div className="app">
       <header className="topbar">
-        <Link className="brand" href="/" aria-label="Splendid Hubs home">
-          <span className="brand-mark" aria-hidden="true">♡</span><span className="brand-name">Splendid Hubs</span>
+        <Link className="brand" href="/" aria-label="Splendid_Hubs home">
+          <span className="brand-mark" aria-hidden="true">♡</span><span className="brand-name">Splendid_Hubs</span>
         </Link>
         <div className="top-note">A little less swiping, a little more <span>✨ something.</span></div>
         <ProfileMenu displayName={displayName} email={email} avatarUrl={avatarUrl} isSuperAdmin={isSuperAdmin} />

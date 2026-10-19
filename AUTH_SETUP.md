@@ -1,4 +1,4 @@
-# Splendid Hubs: Next.js and Supabase setup
+# Splendid_Hubs: Next.js and Supabase setup
 
 ## Architecture
 
@@ -38,6 +38,8 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 Find the URL and **publishable** key in Supabase project API settings. A legacy `anon` key is also a public browser-safe key. Never use a service-role or secret key in a `NEXT_PUBLIC_` variable, client component, or this repository. No privileged operation here requires one. `.env.local` is excluded from Git.
 
+For Vercel, add all three variables in **Project → Settings → Environment Variables** for each deployment environment you use. Set their type to **Config**, not **Secret**: these `NEXT_PUBLIC_` values are intentionally exposed to the browser, and Supabase authorization is enforced by row-level security. Use your Supabase project URL, its publishable key, and the deployed app's origin (for example, `https://your-project.vercel.app`) for `NEXT_PUBLIC_APP_URL`. Redeploy after saving environment variables.
+
 ## Create the Supabase project and apply migrations
 
 1. Create a Supabase project and store its database password securely.
@@ -74,7 +76,7 @@ Find the URL and **publishable** key in Supabase project API settings. A legacy 
 
 In **Authentication → URL Configuration**:
 
-- Set **Site URL** to the production app origin.
+- Set **Site URL** to the production app origin configured as `NEXT_PUBLIC_APP_URL`.
 - Allow the development and production callback paths, for example `http://localhost:3000/auth/callback*` and `https://your-domain.example/auth/callback*`. The wildcard is limited to the callback path because the app adds fixed PKCE flow parameters; do not allow broad wildcard origins.
 - `NEXT_PUBLIC_APP_URL` must be the origin only. The server builds fixed callback URLs and ignores client-supplied redirect destinations.
 

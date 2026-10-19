@@ -15,8 +15,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Splendid Hubs — good things find their way",
-  description: "Splendid Hubs brings people together for thoughtful connections.",
+  title: "Splendid_Hubs — good things find their way",
+  description: "Splendid_Hubs brings people together for thoughtful connections.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

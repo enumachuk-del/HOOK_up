@@ -48,7 +48,7 @@ export default async function ProfilePage() {
         <div className="profile-page-heading">
           <p className="eyebrow">Make it yours</p>
           <h1>Your profile & settings</h1>
-          <p>Changes are saved to your Splendid Hubs account and used across the app.</p>
+          <p>Changes are saved to your Splendid_Hubs account and used across the app.</p>
         </div>
         <ProfileEditor
           profile={profile}

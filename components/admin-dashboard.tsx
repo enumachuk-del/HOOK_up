@@ -119,7 +119,7 @@ export function AdminDashboard({
           <a href="#reports"><span>⚑</span> Reports <b>{stats?.open_reports ?? 0}</b></a>
           <a href="#activity"><span>◷</span> Activity & security</a>
         </nav>
-        <Link className="admin-sidebar-back" href="/">← Return to Splendid Hubs</Link>
+        <Link className="admin-sidebar-back" href="/">← Return to Splendid_Hubs</Link>
       </aside>
 
       <main className="admin-main">
@@ -127,7 +127,7 @@ export function AdminDashboard({
           <div>
             <p className="admin-eyebrow">Platform administration</p>
             <h1>Good morning. Here’s your overview.</h1>
-            <p className="admin-subtitle">Manage accounts, review reports, and keep Splendid Hubs running smoothly.</p>
+            <p className="admin-subtitle">Manage accounts, review reports, and keep Splendid_Hubs running smoothly.</p>
           </div>
           <span className="admin-secure-pill"><span /> Secure admin session</span>
         </div>

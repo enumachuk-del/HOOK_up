@@ -52,7 +52,7 @@ export function AuthPanel({
         </div>
         {configMissing && (
           <div className="auth-config" role="status">
-            Set valid <code>NEXT_PUBLIC_SUPABASE_URL</code>, <code>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>, and <code>NEXT_PUBLIC_APP_URL</code> values in <code>.env.local</code>, then restart Next.js.
+            Configure <code>NEXT_PUBLIC_SUPABASE_URL</code>, <code>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>, and <code>NEXT_PUBLIC_APP_URL</code> in your hosting provider. On Vercel, set each variable’s type to <strong>Config</strong>, use your Supabase project URL and publishable key plus this site’s origin, then redeploy.
           </div>
         )}
         {initialMessage && <p className={`auth-message ${initialKind}`} role="status">{initialMessage}</p>}
